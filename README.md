@@ -35,5 +35,22 @@ series = {CoDS COMAD 2020}
 }
 ```
 
-## License
-Creative Commons Attribution 4.0 International [Link](https://github.com/pratikkayal/PlantDoc-Dataset/blob/master/LICENSE.txt)
+## path to colab
+```python
+
+import os
+import urllib
+import zipfile
+
+# Download and unzip the dataset
+if not os.path.isfile('plantdoc.zip'):
+  urllib.request.urlretrieve("https://github.com/Gurupatil0003/PlantDoc-Dataset/archive/refs/heads/master.zip", "plantdoc.zip")
+
+zip_filename = "plantdoc.zip"
+with zipfile.ZipFile(zip_filename, "r") as zip_ref:
+    zip_ref.extractall(".")
+
+
+
+
+```
